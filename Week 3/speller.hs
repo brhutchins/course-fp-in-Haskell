@@ -4,9 +4,8 @@ speller xss = foldr (addComma . xIsFor) "" $ removeNullWordsFrom xss
             | null ys   = "and " ++ xs
             | otherwise = xs ++ ", " ++ ys
 
-          xIsFor word
-            | null word = []
-            | otherwise = [head word] ++ " is for " ++ word
+          xIsFor word =
+            [head word] ++ " is for " ++ word
           
           removeNullWordsFrom xss =
             filter (not . null) xss
