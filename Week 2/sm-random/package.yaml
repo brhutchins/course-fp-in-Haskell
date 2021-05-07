@@ -1,0 +1,16 @@
+name:                sm-random
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/brhutchins/course-fp-in-Haskell/blob/main/Week%202/
+extra-source-files:
+- README.md
+
+dependencies:
+  - base >= 4.7 && < 5
+  - random
+
+executables:
+  sm-random:
+    source-dirs:      src
+    main:             Main.hs
