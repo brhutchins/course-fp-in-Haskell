@@ -53,4 +53,4 @@ You win!
 ```
 
 ## Issues
-Null guess are currently not handled.
+Null guesses are currently not handled.
